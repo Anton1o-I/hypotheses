@@ -8,14 +8,6 @@ import (
 // Experimenter is an interface that defines calculations to evaluate an experiment.
 type Experimenter interface {
 	Evaluate(impute bool) error
-	calcDF()
-	calcSSBlock()
-	calcSSTreatment()
-	calcSS()
-	calcMS()
-	calcPValue()
-	calcFStat()
-	missingValues() bool
 }
 
 // Leveler defines behavior related to factor and block levels.
